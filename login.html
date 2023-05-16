@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-box">
+		<h2>Login Here</h2>
+		<form>
+			<div class="user-box">
+				<input type="text" name="username" required="">
+				<label>Username</label>
+			</div>
+			<div class="user-box">
+				<input type="password" name="password" required="">
+				<label>Password</label>
+			</div>
+			<a href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<input type="submit" value="Login">
+			</a>
+		</form>
+	</div>
+	<script>
+        const inputs = document.querySelectorAll(".login-box input");
+
+function addClass() {
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("active");
+}
+
+function removeClass() {
+	let parent = this.parentNode.parentNode;
+	if (this.value === "") {
+		parent.classList.remove("active");
+	}
+}
+
+inputs.forEach((input) => {
+	input.addEventListener("focus", addClass);
+	input.addEventListener("blur", removeClass);
+});
+
+    </script>
+</body>
+</html>
