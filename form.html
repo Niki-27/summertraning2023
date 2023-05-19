@@ -5,39 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        *{margin: 0;
-        padding: 0;
-    }
-    form{
-        text-align: center;
-        border: 2px solid blue;
-        border-radius: 25px;
-        height: 250px;
-        width: 250px;
-        padding-top: 30px;
-        background-color: rgb(222, 81, 38);
-        color: gray;
-        margin: auto;
-        margin-top: 7%;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 25px;
+            height: 400px;
+            width: 300px;
+            padding-top: 30px;
+            background-color: rgb(52, 40, 40);
+            color: white;
+            margin: auto;
+            margin-top: 7%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 10px;
+            font-size: 40px;
+        }
+        i {
+            font-size: 100px;
+        }
+        input {
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        .button {
+            color: green;
+            font-size: 20px;
+            border: 2px solid green;
+            padding: 4px 10px;
+            border-radius: 15px;
+        }
+        #abc{
+            width: 10px;
+            height: 20px;
+            color: gray;
+            margin-left: 30px;
+        }
+        .a{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
+    <div  class="a">
+        <i class="fas fa-graduation-cap" id="abc"></i>
+        <h1>Student Details</h1>
+    </div>
     <form action="">
-        <label for="Fullname">Full Name</label>
-        <input type="text" placeholder="Enter Your Name">
-        <br>
-        <br>
-        <label for="pass">Password</label>
-        <input type="password" id="pass" placeholder="******">
-        <br>
-        <br>
-        <label for="mail"> Email</label>
-        <input type="email" id="mail" placeholder="abcd123@gmail.com">
-        <br>
-        <br>
-        <input type="submit" value="submit">
+        <label for="Fullname">Full Name:</label>
+        <input type="text" placeholder="Enter Your Name" required>
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="******" required>
+        <br><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" placeholder="abcd123@gmail.com" required>
+        <br><br>
+        <label for="dob">Enter Your D.O.B:</label>
+        <input type="date" id="dob" required>
+        <br><br>
+        <label for="resume">Select Your Resume:</label>
+        <input type="file" id="resume" required>
+        <br><br>
+        <label for="color">Select Your Favorite Color:</label>
+        <input type="color" id="color">
+        <br><br>
+        <input type="reset" value="Reset" class="button">
+        <input type="submit" value="Submit" class="button">
         <br>
     </form>
 </body>
