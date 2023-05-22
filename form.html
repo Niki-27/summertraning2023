@@ -10,15 +10,17 @@
         * {
             margin: 0;
             padding: 0;
+            background-image: url(bg3.jpg);
+            font-size: 17px;
+            color: white;
         }
         form {
             text-align: center;
             border: 2px solid blue;
             border-radius: 25px;
-            height: 400px;
-            width: 300px;
+            height: 440px;
+            width: 340px;
             padding-top: 30px;
-            background-color: rgb(30, 58, 82);
             color: white;
             margin: auto;
             margin-top: 3%;
@@ -35,13 +37,15 @@
         input {
             border: 1px solid gray;
             border-radius: 10px;
+            font-size: 15px;
         }
         .button {
             color: green;
-            font-size: 20px;
+            font-size: 17px;
             border: 2px solid green;
             padding: 4px 10px;
             border-radius: 15px;
+            background-color: white;
         }
         i{
             font-size: 50px;
@@ -52,6 +56,12 @@
             display: flex;
             text-align: center;
             align-items: center;
+        }
+        p{
+            background: none;
+        }
+        label{
+            background: none;
         }
     </style>
 </head>
@@ -76,8 +86,18 @@
         <label for="resume">Select Your Resume:</label>
         <input type="file" id="resume" required>
         <br><br>
+        <label for="gitid">Enter your git URL :</label>
+        <input type="url" required placeholder="https://github.com/Niki-27">
+        <br><br>
         <label for="color">Select Your Favorite Color:</label>
         <input type="color" id="color">
+        <br><br>
+        <p>Please Select your gender :</p>
+        <br>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" required>
+        <label for="female">Female</label>
         <br><br>
         <input type="reset" value="Reset" class="button">
         <input type="submit" value="Submit" class="button">
