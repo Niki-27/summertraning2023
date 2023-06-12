@@ -1,75 +1,136 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .logo{
-            height: 60px;
-        }
-        .menubar{
-            display: flex;
-        }
-    </style>
-  </head>
-  <body>
-    <div class="menubar">
-        <img src="logo1.png" alt="" class="logo">
-        <div class="btn-group">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Free Tools
-            </button>
-            <div class="side">
-                <h2 class="dropdown-item">Ranking the Digital World</h2>
-            </div>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-            </ul>
-          </div>
-          
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-            </ul>
-          </div>
-          
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-              Our Customers
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-              <li><a class="dropdown-item" href="#">Menu item</a></li>
-            </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .menubar {
+      display: flex;
+    }
+
+    .menubar > * {
+      margin-right: 10px;
+    }
+
+    .head {
+      font-size: 30px;
+    }
+
+    .side {
+      text-align: left;
+    }
+    .btn{
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px;
+    }
+    .btn:hover{
+      color: blue;
+      background-color: white;
+    }
+    .four:hover{
+      color: blue;
+      background-color: white;
+    }
+    .five:hover{
+      color: blue;
+      background-color: white;
+    }
+    .four{
+      padding-top: 17px;
+      padding-left: 40px;
+    }
+    .five{
+      padding-top: 17px;
+    }
+    .drop{
+      padding: 10px;
+    }
+    i{
+      padding-top: 20px;
+    }
+    .re{
+      padding-top: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menubar">
+    <img src="logo1.png" alt="" class="logo">
+    <div class="btn-group">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Free Tools
+      </button>
+      <ul class="dropdown-menu">
+        <div class="side">
+          <li><a href="#" class="dropdown-item head">Ranking the Digital World</a>
+            <p>Understand how your traffic and key engagement metrics stack up against the market at a glance.</p>
+          </li>
         </div>
-        <div class="four">Our Data</div> 
-        <div class="five">Pricing</div>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+      </ul>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Products
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static"
+        aria-expanded="false">
+        Our Customers
+      </button>
+      <ul class="dropdown-menu dropdown-menu-lg-end">
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+        <li><a class="dropdown-item" href="#">Menu item</a></li>
+      </ul>
+    </div>
+    <div class="four">Our Data</div>
+    <div class="five">Pricing</div>
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle re" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Resources
+      </a>
+    
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <i class="fas fa-globe-americas"></i>
+    <i class="fas fa-user"></i>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
